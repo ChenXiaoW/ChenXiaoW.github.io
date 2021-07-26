@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://chenxiaow.github.io/favicon.ico?v=1627292188272">
+<link rel="shortcut icon" href="https://chenxiaow.github.io/favicon.ico?v=1627301128111">
 <link rel="stylesheet" href="https://chenxiaow.github.io/styles/main.css">
 
 
@@ -44,7 +44,7 @@ github相关操作
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://chenxiaow.github.io">
-        <img src="https://chenxiaow.github.io/images/avatar.png?v=1627292188272" class="site-logo">
+        <img src="https://chenxiaow.github.io/images/avatar.png?v=1627301128111" class="site-logo">
         <h1 class="site-title">野鹤</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -156,7 +156,16 @@ github相关操作
 <p>配置完以后检测连接，检测通过后进行同步（可能会因网络问题导致同步失败）。<br>
 如果顺利的话到此就完成部署了。</p>
 <h1 id="主题更换">主题更换</h1>
+<p><a href="https://gridea.dev/themes">主题下载</a><br>
+下载完成后复制到站点源文件路径下的<code>themes</code>目录中<br>
+<img src="https://chenxiaow.github.io/post-images/1627300787410.png" alt="" loading="lazy"><br>
+然后在主题设置中设置并保存，重启<code>Gridea</code>，最后再同步到远程仓库中，等待几分钟就可以了。</p>
 <h1 id="博客发布">博客发布</h1>
+<p>编辑完博客以后的发布</p>
+<ul>
+<li>方式1：通过同步的方式发布，但由于网络问题（😜都懂的）会发布失败。</li>
+<li>方式2：熟悉<code>git</code>的同学可以打开通过站点源文件路径下的<code>output</code>文件夹，打开<code>git bash</code>,直接通过<code>commit&amp;push</code> 的方式推送到远程仓库。</li>
+</ul>
 
             </div>
             
