@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Github Pages+Gridea部署个人博客 | 野鹤</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://chenxiaow.github.io/favicon.ico?v=1627283363910">
+<link rel="stylesheet" href="https://chenxiaow.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="准备工作
+
+github 账号
+安装Gridea：下载地址
+
+github相关操作
+
+创建仓库用于存放博客文件
+
+注意事项：
+
+
+仓库名尽量以：username+github.io的形式，在访问的时候就可以直接以https://userna..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://chenxiaow.github.io">
+        <img src="https://chenxiaow.github.io/images/avatar.png?v=1627283363910" class="site-logo">
+        <h1 class="site-title">野鹤</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://chenxiaow.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Github Pages+Gridea部署个人博客</h2>
+            <div class="post-date">2021-07-26</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="准备工作">准备工作</h1>
+<ul>
+<li><code>github</code> 账号</li>
+<li>安装<code>Gridea</code>：<a href="https://gridea.dev/">下载地址</a></li>
+</ul>
+<h1 id="github相关操作">github相关操作</h1>
+<ul>
+<li>创建仓库用于存放博客文件<br>
+<img src="https://chenxiaow.github.io/post-images/1627279835455.png" alt="" loading="lazy"><br>
+注意事项：</li>
+</ul>
+<ol>
+<li>仓库名尽量以：username+<code>github.io</code>的形式，在访问的时候就可以直接以<code>https://username.github.io</code> 访问，如果<code>username</code>不是你的github用户名的话(如上图)，那么访问方式就是 <code>https://username.github.io/repository_name</code></li>
+<li>仓库需要以公共仓库的形式创建</li>
+</ol>
+<ul>
+<li>
+<p>设置仓库<br>
+<img src="https://chenxiaow.github.io/post-images/1627282293409.png" alt="" loading="lazy"><br>
+选定主题后就可以通过 <code>https://ChenXiaoW.github.io/ChenXiao.github.io</code>访问</p>
+</li>
+<li>
+<p>创建结果<br>
+<img src="https://chenxiaow.github.io/post-images/1627283058280.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>访问结果<br>
+<img src="https://chenxiaow.github.io/post-images/1627283083130.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<h1 id="gridea配置">Gridea配置</h1>
+<figure data-type="image" tabindex="1"><img src="https://chenxiaow.github.io/post-images/1627282878239.png" alt="" loading="lazy"></figure>
+<ul>
+<li>配置域名：</li>
+<li>仓库名称</li>
+<li>分支</li>
+<li>仓库用户名（github用户名）</li>
+<li>邮箱</li>
+<li>令牌：<code>Settings-&gt; Developer settings -&gt; Personal access tokens</code> 中创建</li>
+</ul>
+<p>配置完以后检测连接，检测通过后进行同步（可能会因网络问题导致同步失败）。<br>
+如果顺利的话到此就完成部署了。</p>
+<h1 id="主题更换">主题更换</h1>
+<h1 id="博客发布">博客发布</h1>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://chenxiaow.github.io/hello-gridea/">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

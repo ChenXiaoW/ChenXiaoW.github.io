@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenxiaow.github.io</id>
     <title>野鹤</title>
-    <updated>2021-07-26T06:48:26.777Z</updated>
+    <updated>2021-07-26T07:09:38.485Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenxiaow.github.io"/>
     <link rel="self" href="https://chenxiaow.github.io/atom.xml"/>
@@ -11,12 +11,55 @@
     <icon>https://chenxiaow.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 野鹤</rights>
     <entry>
-        <title type="html"><![CDATA[测试]]></title>
-        <id>https://chenxiaow.github.io/ce-shi/</id>
-        <link href="https://chenxiaow.github.io/ce-shi/">
+        <title type="html"><![CDATA[Github Pages+Gridea部署个人博客]]></title>
+        <id>https://chenxiaow.github.io/github-pagesgridea-bu-shu-ge-ren-bo-ke/</id>
+        <link href="https://chenxiaow.github.io/github-pagesgridea-bu-shu-ge-ren-bo-ke/">
         </link>
-        <updated>2021-07-26T06:45:23.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://chenxiaow.github.io/post-images/1627281931994.png" alt="" loading="lazy"></figure>
+        <updated>2021-07-26T05:02:31.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="准备工作">准备工作</h1>
+<ul>
+<li><code>github</code> 账号</li>
+<li>安装<code>Gridea</code>：<a href="https://gridea.dev/">下载地址</a></li>
+</ul>
+<h1 id="github相关操作">github相关操作</h1>
+<ul>
+<li>创建仓库用于存放博客文件<br>
+<img src="https://chenxiaow.github.io/post-images/1627279835455.png" alt="" loading="lazy"><br>
+注意事项：</li>
+</ul>
+<ol>
+<li>仓库名尽量以：username+<code>github.io</code>的形式，在访问的时候就可以直接以<code>https://username.github.io</code> 访问，如果<code>username</code>不是你的github用户名的话(如上图)，那么访问方式就是 <code>https://username.github.io/repository_name</code></li>
+<li>仓库需要以公共仓库的形式创建</li>
+</ol>
+<ul>
+<li>
+<p>设置仓库<br>
+<img src="https://chenxiaow.github.io/post-images/1627282293409.png" alt="" loading="lazy"><br>
+选定主题后就可以通过 <code>https://ChenXiaoW.github.io/ChenXiao.github.io</code>访问</p>
+</li>
+<li>
+<p>创建结果<br>
+<img src="https://chenxiaow.github.io/post-images/1627283058280.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>访问结果<br>
+<img src="https://chenxiaow.github.io/post-images/1627283083130.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<h1 id="gridea配置">Gridea配置</h1>
+<figure data-type="image" tabindex="1"><img src="https://chenxiaow.github.io/post-images/1627282878239.png" alt="" loading="lazy"></figure>
+<ul>
+<li>配置域名：</li>
+<li>仓库名称</li>
+<li>分支</li>
+<li>仓库用户名（github用户名）</li>
+<li>邮箱</li>
+<li>令牌：<code>Settings-&gt; Developer settings -&gt; Personal access tokens</code> 中创建</li>
+</ul>
+<p>配置完以后检测连接，检测通过后进行同步（可能会因网络问题导致同步失败）。<br>
+如果顺利的话到此就完成部署了。</p>
+<h1 id="主题更换">主题更换</h1>
+<h1 id="博客发布">博客发布</h1>
 ]]></content>
     </entry>
     <entry>
