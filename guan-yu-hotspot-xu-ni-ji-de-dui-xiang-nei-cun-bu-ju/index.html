@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://chenxiaow.github.io/favicon.ico?v=1627744782398">
+<link rel="shortcut icon" href="https://chenxiaow.github.io/favicon.ico?v=1627745894561">
 <link rel="stylesheet" href="https://chenxiaow.github.io/styles/main.css">
 
 
@@ -28,9 +28,10 @@
 实例数据（Instance Data）
 对齐填充（Padding）
 
+
 对象头
-对象头包..." />
-    <meta name="keywords" content="" />
+对象头..." />
+    <meta name="keywords" content="JAVA、" />
   </head>
   <body>
     <div id="app" class="main">
@@ -39,7 +40,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://chenxiaow.github.io">
-        <img src="https://chenxiaow.github.io/images/avatar.png?v=1627744782398" class="site-logo">
+        <img src="https://chenxiaow.github.io/images/avatar.png?v=1627745894561" class="site-logo">
         <h1 class="site-title">野鹤</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -102,6 +103,9 @@
             <h2 class="post-title">关于HotSpot虚拟机的对象内存布局</h2>
             <div class="post-date">2021-07-31</div>
             
+              <div class="feature-container" style="background-image: url('https://chenxiaow.github.io/post-images/guan-yu-hotspot-xu-ni-ji-de-dui-xiang-nei-cun-bu-ju.png')">
+              </div>
+            
             <div class="post-content" v-pre>
               <p>关于Java对象在内存中结构的简单描述😜请多多指教</p>
 <!-- more -->
@@ -109,7 +113,8 @@
 <ul>
 <li>对象头（header）</li>
 <li>实例数据（Instance Data）</li>
-<li>对齐填充（Padding）</li>
+<li>对齐填充（Padding）<br>
+<img src="https://chenxiaow.github.io/post-images/1627745675512.png" alt="" loading="lazy"></li>
 </ul>
 <h2 id="对象头">对象头</h2>
 <p><strong>对象头包含两部分信息</strong>：<code>Mark Word</code>和类型指针（<code>klass pointer</code>）；</p>
@@ -141,6 +146,14 @@
 <p>没有什么特别的意义，仅仅起着占位符的作用。由于 HotSpot 虚拟机的自动内存管理系统要求对象起始地址 必须是8字节的整数倍，也就是对象的大小必须是8字节的整数倍，因此如果对象的实例数据部分没有对齐的话，就需要通过对齐填充来补全，达到8字节的整数倍要求。</p>
 
             </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://chenxiaow.github.io/ZXBznn-4x/" class="tag">
+                    JAVA、
+                  </a>
+                
+              </div>
             
             
               <div class="next-post">
