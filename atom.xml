@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenxiaow.github.io</id>
     <title>野鹤</title>
-    <updated>2021-08-01T01:51:23.976Z</updated>
+    <updated>2021-08-03T09:38:49.473Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenxiaow.github.io"/>
     <link rel="self" href="https://chenxiaow.github.io/atom.xml"/>
@@ -32,7 +32,7 @@
 <h3 id="mark-word">Mark Word</h3>
 <p>用于存储对象自身的运行时数据，如哈希码、GC分代年龄、锁状态标志、线程持有的锁、偏向锁ID、偏向时间戳等<br>
 <strong>组成</strong><br>
-<img src="https://chenxiaow.github.io/post-images/1627734528343.png" alt="Mark Word 信息" loading="lazy"></p>
+<img src="https://chenxiaow.github.io/post-images/1627983517030.png" alt="" loading="lazy"></p>
 <ul>
 <li>锁标记位（lock）：区分锁状态，<code>11</code>时表示对象等待GC回收状态，只有最后两位锁标志位有效</li>
 <li>偏向锁标记（biased_lock）：是否偏向锁，由于无锁和偏向锁的锁标识都是<code>01</code>，没办法区分，所以这里引入了一位的偏向锁标识位</li>
